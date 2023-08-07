@@ -1,2 +1,7 @@
 # gamedev-AncientKnights
-This is a game level built using Godot Engine 4.0 and GDScript.
+Description: This is a game level built using Godot Engine 4.0 and GDScript for learning purposes.
+
+Goal: Create a game level with the main character, enemies and effects in just 7 days.
+
+Author: Glauber Belo. Email: hello@glauberbelo.com 
+Website: https://www.glauberbelo.com
