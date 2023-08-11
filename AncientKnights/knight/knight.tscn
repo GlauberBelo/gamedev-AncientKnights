@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://clkvcmebr7u2y"]
+
+[ext_resource type="Texture2D" uid="uid://iwlynoqmepuo" path="res://Assets/Factions/Knights/Warrior.png" id="1_qaebs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vgbfq"]
+size = Vector2(41, 18)
+
+[node name="Knight" type="CharacterBody2D"]
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 31)
+shape = SubResource("RectangleShape2D_vgbfq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_qaebs")
+hframes = 6
+vframes = 3
