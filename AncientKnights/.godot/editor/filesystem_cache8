@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1692120323
+::res://::1692125502
 icon.svg::CompressedTexture2D::7950823517735571775::1691777024::1691777024::1::::<><>::
 ::res://Assets/::1691777024
 ::res://Assets/Dead_and_Fire/::1691777024
@@ -34,6 +34,6 @@ Grass_Flat.png::CompressedTexture2D::2000702994616218193::1691777024::1691777024
 ::res://Assets/Terrain/Water/::1691777024
 Foam.png::CompressedTexture2D::5787965720882248277::1691777024::1691777024::1::::<><>::
 Water.png::CompressedTexture2D::282073100437625853::1691777024::1691777024::1::::<><>::
-::res://knight/::1692119151
-knight.gd::GDScript::-1::1692039080::0::1::::<>CharacterBody2D<>::
-knight.tscn::PackedScene::5566841689909915950::1692119151::0::1::::<><>::res://knight/knight.gd<>uid://iwlynoqmepuo::::res://Assets/Factions/Knights/Warrior.png
+::res://knight/::1692124103
+knight.gd::GDScript::-1::1692124080::0::1::::<>CharacterBody2D<>::
+knight.tscn::PackedScene::5566841689909915950::1692124103::0::1::::<><>::res://knight/knight.gd<>uid://iwlynoqmepuo::::res://Assets/Factions/Knights/Warrior.png
