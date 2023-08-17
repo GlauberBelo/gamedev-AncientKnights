@@ -3,14 +3,20 @@ extends CharacterBody2D
 @onready var animation: AnimationPlayer = get_node("Animation")
 @onready var texture: Sprite2D = get_node("Texture")
 @onready var attack_area_collision: CollisionShape2D = get_node("AttackArea/Collision")
+@onready var aux_animation_player: AnimationPlayer = get_node("AuxAnimationPlayer")
+
 @export var move_speed: float = 256.0
-@export var health: int = 10
+@export var health: int = 5
 @export var damage: int = 1
 
 var can_attack: bool = true
+var can_die: bool = false
 
 func _physics_process(delta: float) -> void:
-	if can_attack == false:
+	if (
+		can_attack == false or 
+		can_die
+	):
 		return
 	
 	move()
@@ -32,11 +38,11 @@ func get_direction() -> Vector2:
 func animate() -> void:
 	if velocity.x > 0:
 		texture.flip_h = false
-		attack_area_collision.position.x = 28 #58
+		attack_area_collision.position.x = 58
 		
 	if velocity.x < 0:
 		texture.flip_h = true
-		attack_area_collision.position.x = -28 #-58
+		attack_area_collision.position.x = -58
 	
 	if velocity != Vector2.ZERO:
 		animation.play("run")
@@ -49,7 +55,13 @@ func attack_handler() -> void:
 		can_attack = false
 		animation.play("attack")
 
-func _on_animation_finished(_anim_name: String) -> void:
+func _on_animation_finished(anim_name: String) -> void:
+	match anim_name:
+		"attack":
+			can_attack = true
+		"death":
+			get_tree().reload_current_scene()
+		
 	can_attack = true
 
 func on_attack_area_body_entered(body) -> void:
@@ -58,4 +70,9 @@ func on_attack_area_body_entered(body) -> void:
 func update_health(value: int) -> void:
 	health -= value
 	if health <= 0:
-		print("Morreu")
+		can_die = true
+		animation.play("death")
+		attack_area_collision.set_deferred("disabled", true)
+		return
+	
+	aux_animation_player.play("hit")
