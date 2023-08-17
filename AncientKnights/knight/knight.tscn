@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://clkvcmebr7u2y"]
+[gd_scene load_steps=10 format=3 uid="uid://clkvcmebr7u2y"]
 
 [ext_resource type="Script" path="res://knight/knight.gd" id="1_0xkhs"]
 [ext_resource type="Texture2D" uid="uid://iwlynoqmepuo" path="res://Assets/Factions/Knights/Warrior.png" id="1_qaebs"]
@@ -56,6 +56,18 @@ tracks/3/keys = {
 "update": 1,
 "values": [0]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AttackArea/Collision:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_qvu1s"]
 resource_name = "attack"
@@ -107,6 +119,18 @@ tracks/3/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [12, 13, 14, 15, 16, 17]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AttackArea/Collision:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
 }
 
 [sub_resource type="Animation" id="Animation_o7bq2"]
@@ -223,7 +247,12 @@ _data = {
 "run": SubResource("Animation_qdmdu")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tfkin"]
+size = Vector2(59, 113)
+
 [node name="Knight" type="CharacterBody2D"]
+collision_layer = 3
+collision_mask = 2
 script = ExtResource("1_0xkhs")
 
 [node name="Collision" type="CollisionShape2D" parent="."]
@@ -240,4 +269,14 @@ libraries = {
 "": SubResource("AnimationLibrary_2h80t")
 }
 
+[node name="AttackArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="Collision" type="CollisionShape2D" parent="AttackArea"]
+position = Vector2(58, -15)
+shape = SubResource("RectangleShape2D_tfkin")
+disabled = true
+
 [connection signal="animation_finished" from="Animation" to="." method="_on_animation_finished"]
+[connection signal="body_entered" from="AttackArea" to="." method="on_attack_area_body_entered"]
