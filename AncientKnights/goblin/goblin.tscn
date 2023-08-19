@@ -337,3 +337,4 @@ libraries = {
 
 [connection signal="body_entered" from="DetectionArea" to="." method="on_detection_area_body_entered"]
 [connection signal="body_exited" from="DetectionArea" to="." method="on_detection_area_body_exited"]
+[connection signal="animation_finished" from="Animation" to="." method="on_animation_finished"]

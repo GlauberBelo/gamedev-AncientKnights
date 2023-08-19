@@ -1,4 +1,4 @@
-res://goblin/goblin.gd
-res://management/level.tscn
 res://knight/knight.tscn
+res://goblin/goblin.gd
 res://goblin/goblin.tscn
+res://management/level.tscn
