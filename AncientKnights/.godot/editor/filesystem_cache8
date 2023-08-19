@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1692322999
+::res://::1692470895
 icon.svg::CompressedTexture2D::7950823517735571775::1691777024::1691777024::1::::<><>::
 ::res://Assets/::1691777024
 ::res://Assets/Dead_and_Fire/::1691777024
@@ -34,8 +34,8 @@ Grass_Flat.png::CompressedTexture2D::2000702994616218193::1691777024::1691777024
 ::res://Assets/Terrain/Water/::1691777024
 Foam.png::CompressedTexture2D::5787965720882248277::1691777024::1691777024::1::::<><>::
 Water.png::CompressedTexture2D::282073100437625853::1691777024::1691777024::1::::<><>::
-::res://goblin/::1692322954
-goblin.tscn::PackedScene::35788937973967483::1692322954::0::1::::<><>::uid://dkxhsgimavkjw::::res://Assets/Factions/Goblins/Torch.png<>uid://c4raye1i5kbsr::::res://Assets/Dead_and_Fire/Dead/Dead.png
-::res://knight/::1692322982
+::res://goblin/::1692323087
+goblin.tscn::PackedScene::35788937973967483::1692323087::0::1::::<><>::uid://dkxhsgimavkjw::::res://Assets/Factions/Goblins/Torch.png<>uid://c4raye1i5kbsr::::res://Assets/Dead_and_Fire/Dead/Dead.png
+::res://knight/::1692323024
 knight.gd::GDScript::-1::1692235681::0::1::::<>CharacterBody2D<>::
-knight.tscn::PackedScene::5566841689909915950::1692322982::0::1::::<><>::res://knight/knight.gd<>uid://iwlynoqmepuo::::res://Assets/Factions/Knights/Warrior.png<>uid://c4raye1i5kbsr::::res://Assets/Dead_and_Fire/Dead/Dead.png
+knight.tscn::PackedScene::5566841689909915950::1692323024::0::1::::<><>::res://knight/knight.gd<>uid://iwlynoqmepuo::::res://Assets/Factions/Knights/Warrior.png<>uid://c4raye1i5kbsr::::res://Assets/Dead_and_Fire/Dead/Dead.png
