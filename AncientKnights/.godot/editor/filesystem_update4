@@ -1,6 +1,4 @@
-res://knight/knight.tscn
-res://goblin/goblin.gd
-res://goblin/goblin.tscn
 res://management/level.tscn
-res://goblin/enemy_attack_area.gd
+res://knight/knight.tscn
+res://goblin/goblin.tscn
 res://goblin/enemy_attack_area.tscn

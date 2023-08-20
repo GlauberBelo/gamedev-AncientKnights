@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1692555318
+::res://::1692563258
 icon.svg::CompressedTexture2D::7950823517735571775::1692487968::1692487968::1::::<><>::
 ::res://Assets/::1692487968
 ::res://Assets/Dead_and_Fire/::1692487968
@@ -34,11 +34,13 @@ Grass_Flat.png::CompressedTexture2D::2000702994616218193::1692487968::1692487968
 ::res://Assets/Terrain/Water/::1692487968
 Foam.png::CompressedTexture2D::5787965720882248277::1692487968::1692487968::1::::<><>::
 Water.png::CompressedTexture2D::282073100437625853::1692487968::1692487968::1::::<><>::
-::res://goblin/::1692494164
-goblin.gd::GDScript::-1::1692487968::0::1::::<>CharacterBody2D<>::
-goblin.tscn::PackedScene::35788937973967483::1692494164::0::1::::<><>::res://goblin/goblin.gd<>uid://dkxhsgimavkjw::::res://Assets/Factions/Goblins/Torch.png<>uid://c4raye1i5kbsr::::res://Assets/Dead_and_Fire/Dead/Dead.png
-::res://knight/::1692494164
+::res://goblin/::1692558016
+enemy_attack_area.gd::GDScript::-1::1692557713::0::1::::<>Area2D<>::
+enemy_attack_area.tscn::PackedScene::4548197412472976560::1692558016::0::1::::<><>::res://goblin/enemy_attack_area.gd
+goblin.gd::GDScript::-1::1692558016::0::1::::<>CharacterBody2D<>::
+goblin.tscn::PackedScene::35788937973967483::1692558016::0::1::::<><>::res://goblin/goblin.gd<>uid://dkxhsgimavkjw::::res://Assets/Factions/Goblins/Torch.png<>uid://c4raye1i5kbsr::::res://Assets/Dead_and_Fire/Dead/Dead.png
+::res://knight/::1692558016
 knight.gd::GDScript::-1::1692487968::0::1::::<>CharacterBody2D<>::
-knight.tscn::PackedScene::5566841689909915950::1692494164::0::1::::<><>::res://knight/knight.gd<>uid://iwlynoqmepuo::::res://Assets/Factions/Knights/Warrior.png<>uid://c4raye1i5kbsr::::res://Assets/Dead_and_Fire/Dead/Dead.png
-::res://management/::1692494164
-level.tscn::PackedScene::7708403547118318947::1692494164::0::1::::<><>::uid://rlo586yf5fr::::res://goblin/goblin.tscn<>uid://clkvcmebr7u2y::::res://knight/knight.tscn
+knight.tscn::PackedScene::5566841689909915950::1692558016::0::1::::<><>::res://knight/knight.gd<>uid://iwlynoqmepuo::::res://Assets/Factions/Knights/Warrior.png<>uid://c4raye1i5kbsr::::res://Assets/Dead_and_Fire/Dead/Dead.png
+::res://management/::1692558059
+level.tscn::PackedScene::7708403547118318947::1692558059::0::1::::<><>::uid://rlo586yf5fr::::res://goblin/goblin.tscn<>uid://clkvcmebr7u2y::::res://knight/knight.tscn
