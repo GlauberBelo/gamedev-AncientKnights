@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name Player
 
 const ATTACK_AREA: PackedScene = preload("res://goblin/enemy_attack_area.tscn")
 const OFFSET: Vector2 = Vector2(0.5, 31)
@@ -62,12 +63,12 @@ func update_health(value: int) -> void:
 	aux_animation_player.play("hit")
 
 func on_detection_area_body_entered(body):
-	player_ref = body
-
+	if body is Player:
+		player_ref = body
 
 func on_detection_area_body_exited(_body):
-	player_ref = null
-
+	if _body is Player:
+		player_ref = null
 
 func on_animation_finished(anim_name: String) -> void:
 	if anim_name == "death":
