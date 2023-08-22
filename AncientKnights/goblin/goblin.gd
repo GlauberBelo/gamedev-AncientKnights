@@ -1,5 +1,4 @@
 extends CharacterBody2D
-class_name Player
 
 const ATTACK_AREA: PackedScene = preload("res://goblin/enemy_attack_area.tscn")
 const OFFSET: Vector2 = Vector2(0.5, 31)

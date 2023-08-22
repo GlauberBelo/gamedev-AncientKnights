@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name Player
 
 @onready var animation: AnimationPlayer = get_node("Animation")
 @onready var texture: Sprite2D = get_node("Texture")
