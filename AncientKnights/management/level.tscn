@@ -133,6 +133,7 @@ sources/0 = SubResource("TileSetAtlasSource_ebx3e")
 script = ExtResource("1_pk12t")
 
 [node name="Water" type="TileMap" parent="Terrain"]
+z_index = -2
 tile_set = SubResource("TileSet_fgqau")
 format = 2
 

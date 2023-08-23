@@ -1,0 +1,74 @@
+[gd_scene load_steps=11 format=3 uid="uid://djdissygg2ull"]
+
+[ext_resource type="Texture2D" uid="uid://copy7j7tku0j6" path="res://Assets/Terrain/Water/Foam.png" id="1_833cu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u830q"]
+atlas = ExtResource("1_833cu")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w8ym4"]
+atlas = ExtResource("1_833cu")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6x463"]
+atlas = ExtResource("1_833cu")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tk0em"]
+atlas = ExtResource("1_833cu")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qc6ky"]
+atlas = ExtResource("1_833cu")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1hpki"]
+atlas = ExtResource("1_833cu")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vrxb3"]
+atlas = ExtResource("1_833cu")
+region = Rect2(1152, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_432lc"]
+atlas = ExtResource("1_833cu")
+region = Rect2(1344, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wo755"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u830q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w8ym4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6x463")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tk0em")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qc6ky")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1hpki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vrxb3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_432lc")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[node name="Foam" type="AnimatedSprite2D"]
+z_index = -1
+position = Vector2(32, 32)
+sprite_frames = SubResource("SpriteFrames_wo755")
+animation = &"idle"
+autoplay = "idle"
