@@ -3,4 +3,5 @@ res://goblin/goblin.tscn
 res://management/level.tscn
 res://goblin/enemy_attack_area.tscn
 res://management/foam.tscn
-res://management/Terrain.gd
+res://management/menu.tscn
+res://management/menu.gd

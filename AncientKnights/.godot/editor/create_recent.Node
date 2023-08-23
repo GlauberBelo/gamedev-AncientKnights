@@ -1,3 +1,6 @@
+Button
+VBoxContainer
+Label
 AnimatedSprite2D
 TileMap
 Camera2D

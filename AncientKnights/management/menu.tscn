@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=3 uid="uid://hla4tn4yqdai"]
+
+[ext_resource type="Script" path="res://management/menu.gd" id="1_ipsx8"]
+[ext_resource type="FontFile" uid="uid://2t3aa6qwiv8e" path="res://Assets/kurland.ttf" id="1_t1l46"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8b7a7"]
+font = ExtResource("1_t1l46")
+font_size = 64
+outline_size = 4
+outline_color = Color(0, 0, 0, 0.6)
+shadow_size = 8
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(4, 4)
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ipsx8")
+
+[node name="GameName" type="Label" parent="."]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 60.0
+offset_right = 500.0
+offset_bottom = 131.0
+text = "Ancient Knights"
+label_settings = SubResource("LabelSettings_8b7a7")
+vertical_alignment = 1
+
+[node name="ButtonsContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -300.0
+offset_top = -360.0
+offset_right = -60.0
+offset_bottom = -60.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/separation = 20
+
+[node name="NewGame" type="Button" parent="ButtonsContainer" groups=["button"]]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_t1l46")
+theme_override_font_sizes/font_size = 32
+text = "New Game"
+alignment = 2
+
+[node name="Quit" type="Button" parent="ButtonsContainer" groups=["button"]]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_t1l46")
+theme_override_font_sizes/font_size = 32
+text = "Quit"
+alignment = 2
