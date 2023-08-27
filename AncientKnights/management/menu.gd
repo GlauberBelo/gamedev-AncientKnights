@@ -7,6 +7,8 @@ func _ready() -> void:
 func on_button_pressed(button_name: String) -> void:
 	match button_name:
 		"NewGame":
-			get_tree().change_scene_to_file("res://management/level.tscn")
+			transition_screen.scene_path = "res://management/level.tscn"
+			transition_screen.fade_in()
 		"Quit":
-			get_tree().quit()
+			transition_screen.can_quit = true
+			transition_screen.fade_in()

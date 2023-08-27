@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="AncientKnights"
+run/main_scene="res://management/menu.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+transition_screen="*res://management/transition_screen.tscn"
 
 [input]
 

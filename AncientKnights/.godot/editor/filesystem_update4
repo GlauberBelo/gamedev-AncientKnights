@@ -4,4 +4,4 @@ res://management/level.tscn
 res://goblin/enemy_attack_area.tscn
 res://management/foam.tscn
 res://management/menu.tscn
-res://management/menu.gd
+res://management/transition_screen.tscn

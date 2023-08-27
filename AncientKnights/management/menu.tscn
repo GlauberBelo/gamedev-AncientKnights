@@ -1,7 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://hla4tn4yqdai"]
+[gd_scene load_steps=11 format=3 uid="uid://hla4tn4yqdai"]
 
 [ext_resource type="Script" path="res://management/menu.gd" id="1_ipsx8"]
 [ext_resource type="FontFile" uid="uid://2t3aa6qwiv8e" path="res://Assets/kurland.ttf" id="1_t1l46"]
+[ext_resource type="Script" path="res://management/Terrain.gd" id="3_oct7x"]
+[ext_resource type="Texture2D" uid="uid://eavx5m848jof" path="res://Assets/Terrain/Water/Water.png" id="4_onek1"]
+[ext_resource type="Texture2D" uid="uid://3rfjyvsdeqjp" path="res://Assets/Terrain/Ground/Grass_Flat.png" id="5_inpa5"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_8b7a7"]
 font = ExtResource("1_t1l46")
@@ -11,6 +14,127 @@ outline_color = Color(0, 0, 0, 0.6)
 shadow_size = 8
 shadow_color = Color(0, 0, 0, 1)
 shadow_offset = Vector2(4, 4)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xqim1"]
+texture = ExtResource("4_onek1")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+
+[sub_resource type="TileSet" id="TileSet_fgqau"]
+tile_size = Vector2i(64, 64)
+physics_layer_0/collision_layer = 4
+physics_layer_0/collision_mask = 3
+sources/0 = SubResource("TileSetAtlasSource_xqim1")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ebx3e"]
+texture = ExtResource("5_inpa5")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:0/0/terrain_set = 0
+0:0/0/terrain = 0
+0:0/0/terrains_peering_bit/right_side = 0
+0:0/0/terrains_peering_bit/bottom_right_corner = 0
+0:0/0/terrains_peering_bit/bottom_side = 0
+1:0/0 = 0
+1:0/0/terrain_set = 0
+1:0/0/terrain = 0
+1:0/0/terrains_peering_bit/right_side = 0
+1:0/0/terrains_peering_bit/bottom_right_corner = 0
+1:0/0/terrains_peering_bit/bottom_side = 0
+1:0/0/terrains_peering_bit/bottom_left_corner = 0
+1:0/0/terrains_peering_bit/left_side = 0
+2:0/0 = 0
+2:0/0/terrain_set = 0
+2:0/0/terrain = 0
+2:0/0/terrains_peering_bit/bottom_side = 0
+2:0/0/terrains_peering_bit/bottom_left_corner = 0
+2:0/0/terrains_peering_bit/left_side = 0
+3:0/0 = 0
+3:0/0/terrain_set = 0
+3:0/0/terrain = 0
+3:0/0/terrains_peering_bit/bottom_side = 0
+0:1/0 = 0
+0:1/0/terrain_set = 0
+0:1/0/terrain = 0
+0:1/0/terrains_peering_bit/right_side = 0
+0:1/0/terrains_peering_bit/bottom_right_corner = 0
+0:1/0/terrains_peering_bit/bottom_side = 0
+0:1/0/terrains_peering_bit/top_side = 0
+0:1/0/terrains_peering_bit/top_right_corner = 0
+1:1/0 = 0
+1:1/0/terrain_set = 0
+1:1/0/terrain = 0
+1:1/0/terrains_peering_bit/right_side = 0
+1:1/0/terrains_peering_bit/bottom_right_corner = 0
+1:1/0/terrains_peering_bit/bottom_side = 0
+1:1/0/terrains_peering_bit/bottom_left_corner = 0
+1:1/0/terrains_peering_bit/left_side = 0
+1:1/0/terrains_peering_bit/top_left_corner = 0
+1:1/0/terrains_peering_bit/top_side = 0
+1:1/0/terrains_peering_bit/top_right_corner = 0
+2:1/0 = 0
+2:1/0/terrain_set = 0
+2:1/0/terrain = 0
+2:1/0/terrains_peering_bit/bottom_side = 0
+2:1/0/terrains_peering_bit/bottom_left_corner = 0
+2:1/0/terrains_peering_bit/left_side = 0
+2:1/0/terrains_peering_bit/top_left_corner = 0
+2:1/0/terrains_peering_bit/top_side = 0
+3:1/0 = 0
+3:1/0/terrain_set = 0
+3:1/0/terrain = 0
+3:1/0/terrains_peering_bit/bottom_side = 0
+3:1/0/terrains_peering_bit/top_side = 0
+0:2/0 = 0
+0:2/0/terrain_set = 0
+0:2/0/terrain = 0
+0:2/0/terrains_peering_bit/right_side = 0
+0:2/0/terrains_peering_bit/top_side = 0
+0:2/0/terrains_peering_bit/top_right_corner = 0
+1:2/0 = 0
+1:2/0/terrain_set = 0
+1:2/0/terrain = 0
+1:2/0/terrains_peering_bit/right_side = 0
+1:2/0/terrains_peering_bit/left_side = 0
+1:2/0/terrains_peering_bit/top_left_corner = 0
+1:2/0/terrains_peering_bit/top_side = 0
+1:2/0/terrains_peering_bit/top_right_corner = 0
+2:2/0 = 0
+2:2/0/terrain_set = 0
+2:2/0/terrain = 0
+2:2/0/terrains_peering_bit/left_side = 0
+2:2/0/terrains_peering_bit/top_left_corner = 0
+2:2/0/terrains_peering_bit/top_side = 0
+3:2/0 = 0
+3:2/0/terrain_set = 0
+3:2/0/terrain = 0
+3:2/0/terrains_peering_bit/top_side = 0
+0:3/0 = 0
+0:3/0/terrain_set = 0
+0:3/0/terrain = 0
+0:3/0/terrains_peering_bit/right_side = 0
+1:3/0 = 0
+1:3/0/terrain_set = 0
+1:3/0/terrain = 0
+1:3/0/terrains_peering_bit/right_side = 0
+1:3/0/terrains_peering_bit/left_side = 0
+2:3/0 = 0
+2:3/0/terrain_set = 0
+2:3/0/terrain = 0
+2:3/0/terrains_peering_bit/left_side = 0
+3:3/0 = 0
+3:3/0/terrain_set = 0
+3:3/0/terrain = 0
+
+[sub_resource type="TileSet" id="TileSet_pk18l"]
+tile_size = Vector2i(64, 64)
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Terrain 0"
+terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
+sources/0 = SubResource("TileSetAtlasSource_ebx3e")
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -59,3 +183,18 @@ theme_override_fonts/font = ExtResource("1_t1l46")
 theme_override_font_sizes/font_size = 32
 text = "Quit"
 alignment = 2
+
+[node name="Terrain" type="Node2D" parent="."]
+z_index = -5
+script = ExtResource("3_oct7x")
+
+[node name="Water" type="TileMap" parent="Terrain"]
+z_index = -2
+tile_set = SubResource("TileSet_fgqau")
+format = 2
+
+[node name="Grass" type="TileMap" parent="Terrain"]
+tile_set = SubResource("TileSet_pk18l")
+cell_quadrant_size = 64
+format = 2
+layer_0/tile_data = PackedInt32Array(262148, 65536, 0, 262149, 65536, 1, 262150, 65536, 1, 327687, 65536, 1, 327688, 65536, 1, 327689, 65536, 1, 393227, 131072, 2, 327691, 131072, 1, 458762, 131072, 2, 327690, 65536, 1, 458761, 65536, 2, 393225, 65536, 1, 458760, 65536, 2, 393224, 65536, 1, 458759, 65536, 2, 393223, 65536, 1, 262151, 65536, 1, 524294, 131072, 2, 458758, 65536, 1, 393222, 65536, 1, 327686, 65536, 1, 196614, 65536, 0, 524293, 65536, 2, 458757, 65536, 1, 393221, 65536, 1, 327685, 65536, 1, 196613, 0, 0, 524292, 65536, 2, 458756, 65536, 1, 393220, 65536, 1, 327684, 65536, 1, 524291, 65536, 2, 458755, 65536, 1, 393219, 65536, 1, 327683, 65536, 1, 262147, 65536, 0, 524290, 0, 2, 458754, 0, 1, 393218, 65536, 1, 327682, 65536, 1, 262146, 0, 0, 393217, 0, 2, 327681, 0, 0, 196615, 65536, 0, 262155, 131072, 0, 262154, 65536, 1, 131082, 131072, 0, 262153, 65536, 1, 196617, 65536, 1, 262152, 65536, 1, 196616, 65536, 0, 196618, 131072, 1, 393226, 65536, 1, 131081, 0, 0)
