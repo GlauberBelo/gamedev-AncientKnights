@@ -13,6 +13,11 @@ class_name Player
 var can_attack: bool = true
 var can_die: bool = false
 
+func _ready() -> void:
+	if transition_screen.player_health != 0:
+		return
+	transition_screen.player_health = health
+
 func _physics_process(delta: float) -> void:
 	if (
 		can_attack == false or 
@@ -62,7 +67,7 @@ func _on_animation_finished(anim_name: String) -> void:
 			can_attack = true
 		"death":
 			transition_screen.fade_in()
-		
+			transition_screen.player_health = 0
 	can_attack = true
 
 func on_attack_area_body_entered(body) -> void:
@@ -70,6 +75,10 @@ func on_attack_area_body_entered(body) -> void:
 
 func update_health(value: int) -> void:
 	health -= value
+	
+	transition_screen.player_health = health
+	get_tree().call_group("level", "update_health", health)
+	
 	if health <= 0:
 		can_die = true
 		animation.play("death")

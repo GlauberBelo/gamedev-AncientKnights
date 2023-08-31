@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://bht6h656ck1fq"]
+
+[ext_resource type="FontFile" uid="uid://2t3aa6qwiv8e" path="res://Assets/kurland.ttf" id="1_u5sbr"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_eas3p"]
+font = ExtResource("1_u5sbr")
+font_size = 32
+outline_size = 4
+outline_color = Color(0, 0, 0, 0.6)
+shadow_size = 4
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(2, 2)
+
+[node name="Interface" type="CanvasLayer"]
+
+[node name="Health" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 110.0
+offset_bottom = 57.0
+text = "Hp: 10"
+label_settings = SubResource("LabelSettings_eas3p")
+vertical_alignment = 1

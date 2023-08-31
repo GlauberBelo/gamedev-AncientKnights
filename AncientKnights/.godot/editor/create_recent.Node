@@ -1,7 +1,7 @@
 Label
+CanvasLayer
 AnimationPlayer
 ColorRect
-CanvasLayer
 Button
 VBoxContainer
 AnimatedSprite2D

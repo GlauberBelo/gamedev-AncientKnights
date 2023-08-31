@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dh3ajr6lvf3kh"]
+[gd_scene load_steps=12 format=3 uid="uid://dh3ajr6lvf3kh"]
 
 [ext_resource type="Script" path="res://management/level.gd" id="1_sb371"]
 [ext_resource type="Script" path="res://management/Terrain.gd" id="2_qa7nq"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://3rfjyvsdeqjp" path="res://Assets/Terrain/Ground/Grass_Flat.png" id="4_m4few"]
 [ext_resource type="PackedScene" uid="uid://rlo586yf5fr" path="res://goblin/goblin.tscn" id="5_twd8f"]
 [ext_resource type="PackedScene" uid="uid://clkvcmebr7u2y" path="res://knight/knight.tscn" id="6_l0qrm"]
+[ext_resource type="PackedScene" uid="uid://bht6h656ck1fq" path="res://management/interface.tscn" id="7_h2rpa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xqim1"]
 texture = ExtResource("3_htcuq")
@@ -158,3 +159,5 @@ collision_mask = 6
 
 [node name="Goblin2" parent="." instance=ExtResource("5_twd8f")]
 position = Vector2(105, 573)
+
+[node name="Interface" parent="." instance=ExtResource("7_h2rpa")]

@@ -5,6 +5,8 @@ extends CanvasLayer
 var scene_path: String = ""
 var can_quit: bool = false
 
+var player_health: int = 0
+
 func fade_in(opt: bool = false) -> void:
 	if opt:
 		animation.play("special_fade_in")
