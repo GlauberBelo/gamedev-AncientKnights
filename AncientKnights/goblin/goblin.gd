@@ -71,4 +71,5 @@ func on_detection_area_body_exited(_body):
 
 func on_animation_finished(anim_name: String) -> void:
 	if anim_name == "death":
+		get_tree().call_group("level", "increase_kill_count")
 		queue_free()

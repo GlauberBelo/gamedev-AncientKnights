@@ -1,9 +1,9 @@
+Label
 AnimationPlayer
 ColorRect
 CanvasLayer
 Button
 VBoxContainer
-Label
 AnimatedSprite2D
 TileMap
 Camera2D

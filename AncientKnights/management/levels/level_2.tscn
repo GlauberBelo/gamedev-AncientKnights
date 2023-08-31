@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://daosi0js8o4qc"]
+
+[ext_resource type="PackedScene" uid="uid://rlo586yf5fr" path="res://goblin/goblin.tscn" id="1_6tnn0"]
+[ext_resource type="PackedScene" uid="uid://dh3ajr6lvf3kh" path="res://management/levels/level_1.tscn" id="1_muy5r"]
+
+[node name="Level2" instance=ExtResource("1_muy5r")]
+target_kill_count = 4
+next_level_scene_path = ""
+current_level_scene_path = "res://management/levels/level_2.tscn"
+
+[node name="Goblin3" parent="." index="4" instance=ExtResource("1_6tnn0")]
+position = Vector2(835, 52)
+
+[node name="Goblin4" parent="." index="5" instance=ExtResource("1_6tnn0")]
+position = Vector2(-76, 350)

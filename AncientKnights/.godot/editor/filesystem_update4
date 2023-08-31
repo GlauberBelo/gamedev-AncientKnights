@@ -5,3 +5,10 @@ res://goblin/enemy_attack_area.tscn
 res://management/foam.tscn
 res://management/menu.tscn
 res://management/transition_screen.tscn
+res://management/level.gd
+res://management/transition_screen.gd
+res://knight/knight.gd
+res://management/levels/level_2.tscn
+res://management/levels/level_1.tscn
+res://management/menu.gd
+res://goblin/goblin.gd

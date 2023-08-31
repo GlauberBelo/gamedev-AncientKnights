@@ -344,9 +344,6 @@ _data = {
 [node name="Knight" type="CharacterBody2D"]
 collision_mask = 2
 script = ExtResource("1_0xkhs")
-move_speed = null
-health = null
-damage = null
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 31)
