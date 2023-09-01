@@ -1,0 +1,72 @@
+[gd_scene load_steps=11 format=3 uid="uid://856abbj824gk"]
+
+[ext_resource type="Texture2D" uid="uid://bfpfcl7gfj43h" path="res://Assets/Terrain/Decorations/Rocks_04.png" id="1_gomef"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ofn8c"]
+atlas = ExtResource("1_gomef")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ucm7"]
+atlas = ExtResource("1_gomef")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t0mps"]
+atlas = ExtResource("1_gomef")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sv2uu"]
+atlas = ExtResource("1_gomef")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cuqm3"]
+atlas = ExtResource("1_gomef")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gr6y0"]
+atlas = ExtResource("1_gomef")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gyvef"]
+atlas = ExtResource("1_gomef")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fwx3w"]
+atlas = ExtResource("1_gomef")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h3vul"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ofn8c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ucm7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t0mps")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sv2uu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cuqm3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gr6y0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gyvef")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fwx3w")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[node name="WaterRocks" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_h3vul")
+animation = &"idle"
+autoplay = "idle"
