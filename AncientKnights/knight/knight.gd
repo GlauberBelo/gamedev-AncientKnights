@@ -15,6 +15,7 @@ var can_die: bool = false
 
 func _ready() -> void:
 	if transition_screen.player_health != 0:
+		health = transition_screen.player_health
 		return
 	transition_screen.player_health = health
 
