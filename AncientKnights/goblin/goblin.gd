@@ -10,6 +10,7 @@ const OFFSET: Vector2 = Vector2(0.5, 31)
 var can_die: bool = false
 var player_ref: CharacterBody2D = null
 
+@export var score: int = 1
 @export var health: int = 3
 @export var move_speed: float = 192.0
 @export var distance_threshold: float = 60.0
@@ -71,5 +72,7 @@ func on_detection_area_body_exited(_body):
 
 func on_animation_finished(anim_name: String) -> void:
 	if anim_name == "death":
+		transition_screen.player_score += score
 		get_tree().call_group("level", "increase_kill_count")
+		get_tree().call_group("level", "update_score", transition_screen.player_score)
 		queue_free()

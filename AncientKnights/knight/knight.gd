@@ -67,6 +67,7 @@ func _on_animation_finished(anim_name: String) -> void:
 			can_attack = true
 		"death":
 			transition_screen.fade_in()
+			transition_screen.player_score = 0
 			transition_screen.player_health = 0
 	can_attack = true
 

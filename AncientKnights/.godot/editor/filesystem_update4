@@ -7,6 +7,7 @@ res://management/menu.tscn
 res://management/transition_screen.tscn
 res://management/levels/level_2.tscn
 res://management/interface.tscn
-res://knight/knight.gd
-res://management/transition_screen.gd
 res://management/level.gd
+res://knight/knight.gd
+res://goblin/goblin.gd
+res://management/transition_screen.gd

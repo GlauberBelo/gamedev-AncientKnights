@@ -21,3 +21,12 @@ offset_bottom = 57.0
 text = "Hp: 10"
 label_settings = SubResource("LabelSettings_eas3p")
 vertical_alignment = 1
+
+[node name="Score" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 64.0
+offset_right = 176.0
+offset_bottom = 101.0
+text = "Score: 0000"
+label_settings = SubResource("LabelSettings_eas3p")
+vertical_alignment = 1
