@@ -1,8 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://rlo586yf5fr"]
+[gd_scene load_steps=16 format=3 uid="uid://rlo586yf5fr"]
 
 [ext_resource type="Script" path="res://goblin/goblin.gd" id="1_aad8c"]
 [ext_resource type="Texture2D" uid="uid://dkxhsgimavkjw" path="res://Assets/Factions/Goblins/Torch.png" id="1_oijf5"]
 [ext_resource type="Texture2D" uid="uid://c4raye1i5kbsr" path="res://Assets/Dead_and_Fire/Dead/Dead.png" id="2_jc1sb"]
+[ext_resource type="PackedScene" uid="uid://duga2lnlf7eyh" path="res://management/dust.tscn" id="4_mabbr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qsp7b"]
 radius = 240.0
@@ -350,6 +351,10 @@ libraries = {
 libraries = {
 "": SubResource("AnimationLibrary_7kwgc")
 }
+
+[node name="Dust" parent="." instance=ExtResource("4_mabbr")]
+position = Vector2(0, 31)
+emitting = false
 
 [connection signal="body_entered" from="DetectionArea" to="." method="on_detection_area_body_entered"]
 [connection signal="body_exited" from="DetectionArea" to="." method="on_detection_area_body_exited"]

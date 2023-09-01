@@ -6,6 +6,7 @@ const OFFSET: Vector2 = Vector2(0.5, 31)
 @onready var texture: Sprite2D = get_node("Texture")
 @onready var animation: AnimationPlayer = get_node("Animation")
 @onready var aux_animation_player: AnimationPlayer = get_node("AuxAnimationPlayer")
+@onready var dust: GPUParticles2D = get_node("Dust")
 
 var can_die: bool = false
 var player_ref: CharacterBody2D = null
@@ -29,6 +30,7 @@ func _physics_process(_delta) -> void:
 	
 	if distance < distance_threshold:
 		animation.play("attack")
+		dust.emitting = false
 		return
 	
 	velocity = direction * move_speed
@@ -49,8 +51,10 @@ func animate() -> void:
 	
 	if velocity != Vector2.ZERO:
 		animation.play("run")
+		dust.emitting = true
 		return
 	
+	dust.emitting = false
 	animation.play("idle")
 
 func update_health(value: int) -> void:

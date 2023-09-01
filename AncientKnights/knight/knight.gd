@@ -5,6 +5,7 @@ class_name Player
 @onready var texture: Sprite2D = get_node("Texture")
 @onready var attack_area_collision: CollisionShape2D = get_node("AttackArea/Collision")
 @onready var aux_animation_player: AnimationPlayer = get_node("AuxAnimationPlayer")
+@onready var dust: GPUParticles2D = get_node("Dust")
 
 @export var move_speed: float = 256.0
 @export var health: int = 5
@@ -52,14 +53,17 @@ func animate() -> void:
 		attack_area_collision.position.x = -58
 	
 	if velocity != Vector2.ZERO:
+		dust.emitting = true
 		animation.play("run")
 		return
-		
+	
+	dust.emitting = false
 	animation.play("idle")
 
 func attack_handler() -> void:
 	if Input.is_action_just_pressed("attack") and can_attack:
 		can_attack = false
+		dust.emitting = false
 		animation.play("attack")
 
 func _on_animation_finished(anim_name: String) -> void:
