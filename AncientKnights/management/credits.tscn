@@ -1,0 +1,78 @@
+[gd_scene load_steps=4 format=3 uid="uid://degwfj8afkkta"]
+
+[ext_resource type="Script" path="res://management/credits.gd" id="1_oydv0"]
+[ext_resource type="FontFile" uid="uid://2t3aa6qwiv8e" path="res://Assets/kurland.ttf" id="1_xtxoq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kkypw"]
+font = ExtResource("1_xtxoq")
+font_size = 64
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oydv0")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="Background"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -261.0
+offset_top = -101.0
+offset_right = 261.0
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Thanks for playing!"
+label_settings = SubResource("LabelSettings_kkypw")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Menu" type="Button" parent="Background" groups=["button"]]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -133.5
+offset_top = -4.5
+offset_right = 133.5
+offset_bottom = 37.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_xtxoq")
+theme_override_font_sizes/font_size = 32
+text = "Back to Main Menu"
+
+[node name="Quit" type="Button" parent="Background" groups=["button"]]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -133.5
+offset_top = 50.5
+offset_right = 133.5
+offset_bottom = 92.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_xtxoq")
+theme_override_font_sizes/font_size = 32
+text = "Quit"
