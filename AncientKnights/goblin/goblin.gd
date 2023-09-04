@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+const AUDIO_TEMPLATE: PackedScene = preload("res://management/audio_template.tscn")
 const ATTACK_AREA: PackedScene = preload("res://goblin/enemy_attack_area.tscn")
 const OFFSET: Vector2 = Vector2(0.5, 31)
 
@@ -80,3 +81,8 @@ func on_animation_finished(anim_name: String) -> void:
 		get_tree().call_group("level", "increase_kill_count")
 		get_tree().call_group("level", "update_score", transition_screen.player_score)
 		queue_free()
+
+func spawn_sfx(sfx_path: String) -> void:
+	var sfx = AUDIO_TEMPLATE.instantiate()
+	sfx.sfx_to_play = sfx_path
+	add_child(sfx)

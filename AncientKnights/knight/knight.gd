@@ -1,6 +1,8 @@
 extends CharacterBody2D
 class_name Player
 
+const AUDIO_TEMPLATE: PackedScene = preload("res://management/audio_template.tscn")
+
 @onready var animation: AnimationPlayer = get_node("Animation")
 @onready var texture: Sprite2D = get_node("Texture")
 @onready var attack_area_collision: CollisionShape2D = get_node("AttackArea/Collision")
@@ -92,3 +94,8 @@ func update_health(value: int) -> void:
 		return
 	
 	aux_animation_player.play("hit")
+
+func spawn_sfx(sfx_path: String) -> void:
+	var sfx = AUDIO_TEMPLATE.instantiate()
+	sfx.sfx_to_play = sfx_path
+	add_child(sfx)

@@ -120,12 +120,26 @@ tracks/4/path = NodePath(".")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0.3),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0.3, 0.3001),
+"transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
 "method": &"spawn_attack_area"
+}, {
+"args": ["res://Assets/sfx/17_orc_atk_sword_1.wav"],
+"method": &"spawn_sfx"
 }]
+}
+tracks/5/type = "method"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"values": []
 }
 
 [sub_resource type="Animation" id="Animation_biq82"]
@@ -178,6 +192,20 @@ tracks/3/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["res://Assets/sfx/24_orc_death_spin.wav"],
+"method": &"spawn_sfx"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_jgslf"]
@@ -273,6 +301,23 @@ tracks/2/keys = {
 "update": 1,
 "values": [7, 8, 9, 10, 11, 12]
 }
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": ["res://Assets/sfx/25_orc_walk_stone_1.wav"],
+"method": &"spawn_sfx"
+}, {
+"args": ["res://Assets/sfx/25_orc_walk_stone_1.wav"],
+"method": &"spawn_sfx"
+}]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_o1ymj"]
 _data = {
@@ -312,6 +357,20 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 0.231373, 0.172549, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["res://Assets/sfx/21_orc_damage_1.wav"],
+"method": &"spawn_sfx"
+}]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_7kwgc"]

@@ -10,5 +10,5 @@ res://management/interface.tscn
 res://management/tree.tscn
 res://management/water_rocks.tscn
 res://management/dust.tscn
-res://knight/knight.gd
+res://management/audio_template.tscn
 res://goblin/goblin.gd
