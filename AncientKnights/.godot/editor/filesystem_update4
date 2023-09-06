@@ -1,16 +1,1 @@
 res://management/credits.tscn
-res://management/level.gd
-res://management/levels/level_2.tscn
-res://management/credits.gd
-res://knight/knight.tscn
-res://goblin/goblin.tscn
-res://management/levels/level_1.tscn
-res://goblin/enemy_attack_area.tscn
-res://management/foam.tscn
-res://management/menu.tscn
-res://management/transition_screen.tscn
-res://management/interface.tscn
-res://management/tree.tscn
-res://management/water_rocks.tscn
-res://management/dust.tscn
-res://management/audio_template.tscn

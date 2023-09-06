@@ -1,0 +1,15 @@
+res://goblin/enemy_attack_area.tscn::637a2a3439d0c28024485890fee5d358::1693794225::res://.godot/exported/133200997/export-4b5a45a2784f97aaad939b1d85f348eb-enemy_attack_area.scn
+res://goblin/goblin.tscn::1efc5a4ab482c7ca000d86f12867a02a::1693794225::res://.godot/exported/133200997/export-d6392c24c356f7f9bcf757c7045ff6fc-goblin.scn
+res://knight/knight.tscn::4c3fec8b66e3d62b9c31aed002ebf9e6::1693794225::res://.godot/exported/133200997/export-52818e3b578ba68f9ee36599c5aa9070-knight.scn
+res://management/levels/level_1.tscn::18563e11182bdc1acb60bb2d0c5bef9b::1693794225::res://.godot/exported/133200997/export-fdd99a9d955d0d4d118d1744663fb7d6-level_1.scn
+res://management/levels/level_2.tscn::f99aaf1f9f4d00c82856a89e819861ad::1693794225::res://.godot/exported/133200997/export-e9ba2e388b92aecbcf829b1dbf4b5355-level_2.scn
+res://management/audio_template.tscn::ac1911762ad08c688af5e80a26a5309b::1693794225::res://.godot/exported/133200997/export-7b7e5a9e160e4c0cfd1c2e930110e660-audio_template.scn
+res://management/credits.tscn::aa2f56e5a052c7debf7959db3115c4c6::1693794320::res://.godot/exported/133200997/export-cdbbd03b9730f28a41f2758d8911e05f-credits.scn
+res://management/dust.tscn::2e51b2b2aee108be6bd0e41fd83936dc::1693794225::res://.godot/exported/133200997/export-2e6d95d46b0824d28e4dfcb4a1237236-dust.scn
+res://management/foam.tscn::e69ace6182fb8af0ec13ba5b00e22ea1::1693794225::res://.godot/exported/133200997/export-ddeca9b595849e0bda4903b2038bdb52-foam.scn
+res://management/interface.tscn::cb6b2bf7ac70470563dc76669211693a::1693794225::res://.godot/exported/133200997/export-5dea63cc8b93328108352767ac5fed31-interface.scn
+res://management/menu.tscn::fead18410deb8835413a20368bb2f5b0::1693794225::res://.godot/exported/133200997/export-e15d6f5b7b9803d544f9450b4da8593f-menu.scn
+res://management/terrain.tscn::60080da648d55309bb41bce483c01b52::1693101859::res://.godot/exported/133200997/export-89a6afce40873def553151f169d991d5-terrain.scn
+res://management/transition_screen.tscn::8aba343ae6e409f195f69617931ad31f::1693794225::res://.godot/exported/133200997/export-5389e43e8672330868b785584782e54f-transition_screen.scn
+res://management/tree.tscn::82e41ed7aa1fe8b646ee5c3c6dd919fd::1693794225::res://.godot/exported/133200997/export-d3d0bbd9957e9f851719c5e9d340e5ec-tree.scn
+res://management/water_rocks.tscn::024655d5c186865a90948b1e1c01d68d::1693794225::res://.godot/exported/133200997/export-e9e5a23ecbe5a3442a7a2ab24727d126-water_rocks.scn
